@@ -1,0 +1,2 @@
+java -Xmx16g -cp $HOME/annotation/bin:$HOME/annotation/lib/stanford-corenlp-2012-05-22.jar:$HOME/annotation/lib/my-xom.jar:$HOME/annotation/lib/stanford-corenlp-2012-05-22-models.jar:$HOME/annotation/lib/joda-time.jar \
+    edu.jhu.annotation.GigawordAnnotator --in $@

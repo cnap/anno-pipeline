@@ -1,0 +1,34 @@
+# This is the pipeline used to annotate Gigaword English v.5
+# (Annotated Gigaword, Napoles et al. 2012). 
+#
+# Courtney Napoles, cdnapoles@gmail.com
+# 2012-07-03
+
+See pipeline.sh for the full pipeline and usage of individual steps
+If you are running a copy of this, you need to modify scripts/
+splitta.1.03/sbd.py so that the paths for SVM_LEARN and SVM_CLASSIFY
+point to your installation.
+
+Note that the pipeline uses a parallel environment (8 threads for 
+parsing) so please set your configurations accordingly 
+(qsub -l num_proc=8,mem_free=16G,h_vmem=22G).
+
+To run:
+
+./pipeline file_to_annotate.xml working_directory
+
+
+To just run the annotators:
+java -Xmx16g -cp bin:lib/stanford-corenlp-2012-05-22.jar:lib/my-xom.jar:lib/stanford-corenlp-2012-05-22-models.jar:lib/joda-time.jar \
+     edu.jhu.annotation.GigawordAnnotator --in <TESTFILE>
+
+If you'd like to annotate a file that contains a single document 
+without any SGML markup, add "-sgml f". However, for annotating a 
+large quantity of files this is unadvisable, because loading the 
+Stanford models takes a couple of minutes. It is more efficient to
+include several documents in one file (and documents should be
+formatted like <DOC><TEXT>parses</TEXT></DOC>). 
+
+Software versions used:
+Splitta 1.03
+Stanford CoreNLP 1.3.2

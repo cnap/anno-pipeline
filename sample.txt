@@ -1,0 +1,123 @@
+<FILE id="sample.xml">
+<DOC id="Johns Hopkins" type="Wikipedia article" accessed="5/30/2012 3:46pm">
+<TEXT>
+<P>
+Johns Hopkins (May 19, 1795 – December 24, 1873) was an American entrepreneur, abolitionist and philanthropist of 19th-century Baltimore, Maryland.
+</P>
+<P>
+His bequests founded numerous institutions bearing his name, including Johns Hopkins Hospital, Johns Hopkins University, Johns Hopkins School of Nursing, Johns Hopkins School of Medicine, and Johns Hopkins Bloomberg School of Public Health.
+</P>
+<P>
+A biography entitled Johns Hopkins: A Silhouette written by his cousin, Helen Hopkins Thom, was published in 1929 by the Johns Hopkins University Press.
+</P>
+<P>
+Early life
+</P>
+<P>
+Johns Hopkins was born on May 19, 1795, to Samuel Hopkins (1759–1814) of Anne Arundel County, Maryland, and Hannah Janney (1774–1864), of Loudoun County, Virginia. Home was Whitehall, a 500-acre (two km²) tobacco plantation in Anne Arundel County. His first name derives from a maternal great-grandmother, Margaret Johns, who passed it on to her son.
+</P>
+<P>
+The Hopkins family were members of the Society of Friends (Quakers). In 1807 they emancipated their slaves in accordance with their local Society decree, which called for freeing the able-bodied and caring for the others, who would remain at the plantation and provide labor as they could. The second eldest of eleven children, 12 year-old Johns was required to work on the farm, interrupting his formal education. From 1806 to 1809, he likely attended The Free School of Anne Arundel County, which was located in today's Davidsonville, Maryland.
+</P>
+<P>
+In 1812, at the age of 17, Hopkins left the plantation to work in his uncle Gerard Hopkins' Baltimore wholesale grocery business. While living with his uncle's family, Johns and his cousin, Elizabeth, fell in love; however, the Quaker taboo against marriage of first cousins was especially strong, and neither Johns nor Elizabeth ever married.
+</P>
+<P>
+As he became able, Hopkins provided for his extended family, both during his life and posthumously through his will. He bequeathed a home for Elizabeth, where she lived until her death in 1889.
+</P>
+<P>
+Whitehall Plantation is located in today's Crofton, Maryland. Its home, since restored and modified, is on Johns Hopkins Road, adjacent to Reidel Road. The heavily landscaped property is surrounded by Walden Golf Course, and bears a historic marker.
+</P>
+<P>
+Business years
+</P>
+<P>
+Hopkins' early experiences and successes in business came when he was put in charge of the store while his uncle was away during the War of 1812. After seven years with his uncle, Hopkins went into business together with Benjamin Moore, a fellow Quaker. The business partnership was later dissolved with Moore purporting Hopkins' penchant for capital accumulation as the cause for the divide.
+</P>
+<P>
+After Moore's withdrawal, Hopkins partnered with three of his brothers and established Hopkins & Brothers. The company prospered by selling various wares in the Shenandoah Valley from Conestoga wagons, sometimes in exchange for corn whiskey, which was then sold in Baltimore as "Hopkins' Best". The bulk of Hopkins' fortune however was made by his judicious investments in a myriad of ventures, most notably the Baltimore and Ohio Railroad (B&O), of which he became a Director in 1847 and Chairman of the Finance Committee in 1855. He was also President of Merchants' Bank as well as director of a number of other organizations.
+</P>
+<P>
+A charitable individual, Hopkins put up his own money more than once to not only aid Baltimore City during times of financial crises, but also to twice bail the railroad out of debt, in 1857 and 1873. In 1996, Johns Hopkins ranked 69th in "The Wealthy 100: From Benjamin Franklin to Bill Gates - A Ranking of the Richest Americans, Past and Present."
+</P>
+<P>
+Civil War
+</P>
+<P>
+One of the first campaigns of the American Civil War was planned at Johns Hopkins' summer estate, Clifton, where he had also entertained a number of foreign dignitaries including the future King Edward VII. Hopkins was a strong supporter of the Union, unlike most Marylanders, who sympathized with and often supported the South and the Confederacy. During the Civil War, Clifton became a frequent meeting place for local Union sympathizers, and federal officials.
+</P>
+<P>
+Hopkins' support of Abraham Lincoln also often put him at odds with some of Maryland's most prominent people, particularly Supreme Court Justice Roger B. Taney, who continually opposed Lincoln's presidential decisions, such as his policies of limiting habeas corpus and stationing troops in Maryland. In 1862 Hopkins wrote a letter to Lincoln requesting the President not to heed the detractors' calls and continue to keep soldiers stationed in Maryland. Hopkins also pledged financial and logistic support to Lincoln, in particular the free use of the B&O railway system.
+</P>
+<P>
+Abolitionism
+</P>
+<P>
+Johns Hopkins is described as being an "abolitionist before the word was even invented", having been represented as such both prior to the Civil War period, as well as during the Civil War and Reconstruction Era. There are several accounts that describe the abolitionist influence Hopkins was privy to as a 12 year old participant in his parents' emancipation of their family's slaves in 1807. Prior to the Civil War Johns Hopkins worked closely with two of America's most famous abolitionists, Myrtilla Miner and Henry Ward Beecher. During the Civil War Johns Hopkins, being a staunch supporter of Lincoln and the Union, was instrumental in bringing fruition to Lincoln's emancipatory vision.
+</P>
+<P>
+After the Civil War and during Reconstruction, Johns Hopkins' stance on abolitionism infuriated many prominent people in Baltimore. During the American Reconstruction period to his death his abolitionism was expressed in the documents founding the Johns Hopkins Institutions, and reported in newspaper articles before, during, and after the founding of these institutions. Before the war, there was significant written opposition to his support for Myrtilla Miner's founding of a school for African American females (now the University of the District of Columbia). Similarly, opposition (and some support) was expressed during Reconstruction, such as in 1867, the same year he filed papers incorporating the Johns Hopkins Institutions, when he attempted unsuccessfully to stop the convening of the Constitutional Convention where the Democratic Party came into power and where a new Constitution, the Constitution still in effect, was voted to replace the Constitution of the Radical Republicans previously in power.
+</P>
+<P>
+Apparent also in the literature of the times was opposition, and support for, the various other ways he expressed opposition to the racial practices that were beginning to emerge, and re-emerge as well, in the city of Baltimore, the state of Maryland, the nation and in the posthumously constructed and founded institutions that would carry his name, A Baltimore American journalist praised Hopkins for founding three institutions, a university, a hospital and an orphan asylum, specifically for colored children, adding that Hopkins was a "man (beyond his times) who knew no race" citing his provisions for both blacks and whites in the plans for his hospital. The reporter also pointed to similarities between Benjamin Franklin's and Johns Hopkins' views on hospital care and construction, such as their shared interest in free hospitals and the availability of emergency services without prejudice. This article, first published in 1870, also accompanied Hopkins' obituary in the Baltimore American as a tribute in 1873. Cited in many of the newspaper articles on him during his lifetime and immediately after his death were his provisions of scholarships for the poor, and quality health services for the underserved, the poor without regard to their age, sex and color, the colored children asylum and other orphanages, the mentally ill and convalescents.
+</P>
+<P>
+Philanthropy
+</P>
+<P>
+See also: History of the Johns Hopkins University
+</P>
+<P>
+Living his entire adult life in Baltimore, Hopkins made many friends among the city's social elite, many of them Quakers. One of these friends was George Peabody, who was also born in 1795, and who in 1857 founded the Peabody Institute in Baltimore. Other examples of public giving were evident in the city, as public buildings housing free libraries, schools and foundations sprang up along the city's widening streets. On the advice of Peabody, some believe, Hopkins determined to use his great wealth for the public good.
+</P>
+<P>
+The Civil War had taken its toll on Baltimore, however, as did the yellow fever and cholera epidemics that repeatedly ravaged the nation's cities, killing 853 in Baltimore in the summer of 1832 alone. Hopkins was keenly aware of the city's need for medical facilities, particularly in light of the medical advances made during the war, and in 1870 he made a will setting aside seven million dollars - mostly in B&O stock - for the incorporation of a free hospital and affiliated medical and nurse's training colleges, as well as an orphanage for colored children and a university. Many board members were on both boards. The hospital and orphan asylum would each be overseen by the 12-member hospital board of trustees, and the university by the 12-member university board of trustees. Johns Hopkins' bequest was used to posthumously found the Johns Hopkins Colored Children Orphan Asylum  first as he requested, in 1875; the Johns Hopkins University in 1876; the Johns Hopkins Press, the longest continuously operating academic press in America, in 1878; the Johns Hopkins Hospital and the Johns Hopkins School of Nursing in 1889; the Johns Hopkins University School of Medicine 1893; and the Johns Hopkins School of Hygiene and Public Health in 1916.
+</P>
+<P>
+Johns Hopkins' views on his bequests, and on the duties and responsibilities of the two board of trustees, especially the hospital board of trustees led by his friend and fellow Quaker Francis King, were formally stated primarily in four documents, the incorporation papers filed in 1867, his instruction letter to the hospital trustees dated March 12, 1873, his will, which was quoted from extensively in his Baltimore Sun obituary, and in his will's two codicils, one dated 1870 and the other dated 1873.
+</P>
+<P>
+In these documents, Hopkins also made provisions for scholarships to be provided for poor youths in the states where Johns Hopkins had made his wealth, as well as assistance to orphanages other than the one for African American children, to members of his family, to those he employed, black and white, his cousin Elizabeth, and, again, to other institutions for the care and education of youths regardless of color and the care of the elderly, and the ill, including the mentally ill, and convalescents.
+</P>
+<P>
+John Rudolph Niernsee, one of the most famous architects of the time, designed the orphan asylum and helped to design the Johns Hopkins Hospital. The original site for the Johns Hopkins University had been chosen personally by Hopkins. According to his will, it was to be located at his summer estate, Clifton. However, a decision was made not to found the university there. The property, now owned by the city of Baltimore, is the site of a golf course and a park named Clifton Park. While the Johns Hopkins Colored Children Orphan Asylum was founded by the hospital trustees, the other institutions that carry the name of "Johns Hopkins" were founded under the administration of the first president of the Johns Hopkins University and Johns Hopkins Hospital, Daniel Coit Gilman and his successors.
+</P>
+<P>
+Colored Children Orphan Asylum
+</P>
+<P>
+As per Johns Hopkins' instruction letter, the Johns Hopkins Colored Children Orphan Asylum (JHCCOA) was founded first, in 1875, a year before Gilman's inauguration, now the founding date of the university. The construction of the asylum, including its educational and living facilities, was praised by The Nation and the Baltimore American, the latter stating that the orphan asylum was a place where "nothing was wanting that could benefit science and humanity". As was done for other Johns Hopkins Institutions, it was planned after visits and correspondence with similar institutions in Europe and America.
+</P>
+<P>
+The Johns Hopkins Orphan Asylum opened with 24 boys and girls. Under Gilman and his successors, this orphanage was later changed to serve as an orphanage and training school for black female orphans principally as domestic workers, and next as an "orthopedic convalescent" home and school for "colored crippled" children and orphans. The asylum was eventually closed in 1924 nearly fifty years after it opened, and was never reopened.
+</P>
+<P>
+Hospital, University, Press, and Schools of Nursing and Medicine
+</P>
+<P>
+As per Hopkins' March 1873 Instruction Letter, the School of Nursing was founded alongside the Hospital in 1889 by the hospital board of trustees in consultation with Florence Nightingale. Both the nursing school and the hospital were founded over a decade after the founding of the orphan asylum in 1875 and the university in 1876. Hopkins' instruction letter explicitly stated his vision for the hospital; first, to provide assistance to the poor of "all races", no matter the indigent patient's "age, sex or color"; second, that wealthier patients would pay for services and thereby subsidize the care provided to the indigent; third, that the hospital would be the administrative unit for the orphan asylum for African American children which was to receive $25,000 in annual support out of the hospital's half of the endowment; and fourth, that the hospital and orphan asylum should serve 400 patients and 400 children respectively, fifth, that the hospital should be part of the university, and, sixth, that religion but not sectarianism should be an influence in the hospital.
+</P>
+<P>
+By the end of Gilman's presidency, Johns Hopkins University, Johns Hopkins Press, Johns Hopkins Hospital and Johns Hopkins School of Nursing, and Johns Hopkins School of Medicine, and Johns Hopkins Colored Children Orphan Asylum had been founded, the latter by the trustees, and the others in the order listed under the Gilman administration. "Sex" and "color" were major issues in the early history of the Johns Hopkins Institutions. The founding of the School of Nursing is usually linked to Johns Hopkins' statements in his March 1873 instruction letter to the trustees that "I desire you to establish, in connection with the hospital, a training school for female nurses. This provision will secure the services of women competent to care for those sick in the hospital wards, and will enable you to benefit the whole community by supplying it with a class of trained and experienced nurses".
+</P>
+<P>
+Women's most well known success after the founding of the nursing school was their requirement that they be allowed to attend Johns Hopkins medical institutions after they provided funds that made possible the opening of the School of Medicine in 1893. Five African American women were among the first women enrolled in the Johns Hopkins University's undergraduate school in 1970. Furthermore Kelly Miller and Frederick Scott were the first persons of African descent to attend the Johns Hopkins University's graduate and undergraduate schools, respectively. Frederick Scott was the first graduate of African descent from Johns Hopkins University, and he, Robert Gamble, and Kenyan-born James Nabwangu were the first graduates of African descent from Johns Hopkins University's undergraduate school, and Johns Hopkins' medical schools respectively. Those employees holding jobs in the service sector are those of African descent who have the longest and most continuous history at the Johns Hopkins Institutions.
+</P>
+<P>
+Legacy
+</P>
+<P>
+Following Hopkins' death, the Baltimore Sun wrote a lengthy obituary which closed thus: "In the death of Johns Hopkins a career has been closed which affords a rare example of successful energy in individual accumulations, and of practical beneficence in devoting the gains thus acquired to the public." His contribution to the university that has become his greatest legacy was, by all accounts, the largest philanthropic bequest ever made to an American educational institution.
+</P>
+<P>
+Johns Hopkins' Quaker faith and his early life experiences, in particular the 1807 emancipation, had a lasting influence throughout his life and his posthumous legacy as a businessman, railroad man, banker, investor, ship owner, philanthropist and a founder of several Institutions. From very early on, Johns Hopkins had looked upon his wealth as a trust to benefit future generations. He is said to have told his gardener that, "like the man in the parable, I have had many talents given to me and I feel they are in trust. I shall not bury them but give them to the lads who long for a wider education"; his philosophy quietly anticipated Andrew Carnegie's much publicized Gospel of Wealth by more than 25 years.
+</P>
+<P>
+His philanthropy, banking and other business practices were founded neither on slavery nor on the separate but unequal racism of the post Civil War years of his life. In this vein, integral parts of his legacy, as an emancipator, a founder of an orphan asylum for African-American youths, a staunch advocate of abolitionism and of quality care not just for those physically ill, but also for the elderly, the poor, no matter their age, gender, or skin color, and the mentally ill, have by and large been overlooked, even in the institutions that carry his name.
+</P>
+<P>
+In 1973 Johns Hopkins was cited prominently in the Pulitzer Prize winning book The Americans: The Democratic Experience by Daniel Boorstin, former head of the Library of Congress. From November 14, 1975 to September 6, 1976 Hopkins portrait was displayed at the National Portrait Gallery in an exhibit on the democratization of America based on Boorstin's book. In 1989, the United States Postal Service issued a $1 postage stamp in Johns Hopkins' honor, as part of the Great Americans series.
+</P>
+</TEXT>
+</DOC>
+</FILE>
