@@ -32,3 +32,14 @@ formatted like <DOC><TEXT>parses</TEXT></DOC>).
 Software versions used:
 Splitta 1.03
 Stanford CoreNLP 1.3.2
+
+Requirements:
+jgrapht.jar
+joda-time.jar
+my-xom.jar
+splitta.1.03
+stanford-corenlp-2012-05-22.jar
+stanford-corenlp-2012-05-22-models.jar
+svm_light.6.02
+umd-parser.jar
+wsj-6.pml	# grammar file
