@@ -13,6 +13,8 @@ Note that the pipeline uses a parallel environment (8 threads for
 parsing) so please set your configurations accordingly 
 (qsub -l num_proc=8,mem_free=16G,h_vmem=22G).
 
+Be sure to set the environment encoding to UTF-8.
+
 To run:
 
 ./pipeline file_to_annotate.xml working_directory

@@ -68,7 +68,7 @@ echo "Done merging $f. Begin annotating..."
 #    This assumes that the file will be structured as <FILE><DOC><TEXT>parsed 
 #    lines</TEXT></DOC></FILE>. For more options see 
 #    edu.jhu.annotation.GigawordAnnotator
-cmd="java -Xmx16g -cp bin:lib/stanford-corenlp-2012-05-22.jar:lib/my-xom.jar:lib/stanford-corenlp-2012-05-22-models.jar:lib/joda-time.jar \
+cmd="java -Xmx16g -Dfile.encoding=UTF-8 -cp bin:lib/stanford-corenlp-2012-05-22.jar:lib/my-xom.jar:lib/stanford-corenlp-2012-05-22-models.jar:lib/joda-time.jar \
     edu.jhu.annotation.GigawordAnnotator --in $wrkdir/$f.merged > $wrkdir/$f.xml 2>> $wrkdir/$f.errors"
 
 echo $cmd
