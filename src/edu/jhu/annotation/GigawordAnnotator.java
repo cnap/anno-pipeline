@@ -197,6 +197,7 @@ public class GigawordAnnotator {
 					if (debug) {
 						System.err.println("Annotating coref");
 					}
+					fixNullDependencyGraphs(document);
 					try {
 					    dcorefAnnotator().annotate(document);
 					} catch (Exception e) {
@@ -209,6 +210,20 @@ public class GigawordAnnotator {
 		}
 		gdh.closeReader();
 	}
+
+    /**
+     * sentences with no dependency structure have null values for the various
+     * dependency annotations. make sure these are empty dependencies instead
+     * to prevent coref-resolution from dying
+     **/
+    public void fixNullDependencyGraphs(Annotation anno) {
+        for (CoreMap sent : anno.get(SentencesAnnotation.class)) {
+            if (sent.get(CollapsedDependenciesAnnotation.class) == null) {
+                sent.set(CollapsedDependenciesAnnotation.class, new SemanticGraph());
+            }
+	}
+    }
+
 
 	/**
 	 * add dependency relations to the XML. adapted from StanfordCoreNLP to add
