@@ -39,6 +39,8 @@ public class GigawordDocumentHandler {
 	int docIdIndex = 0;
 	String docTypeName = "DOC", textTypeName = "TEXT", parsePrefix = "( (";
 	String currentDocument = null;
+    boolean justSents = false;
+    int sentenceCount = 1; // for flat files, no document structure
 
 	public GigawordDocumentHandler(String filepath) {
 		inputpath = filepath;
@@ -56,11 +58,12 @@ public class GigawordDocumentHandler {
 	 * @param parsePrefix
 	 */
 	public void setOptions(boolean useSGML, String textTypeName,
-			String docTypeName, String parsePrefix, boolean debug) {
+			       String docTypeName, String parsePrefix, boolean debug, boolean justSents) {
 		this.textTypeName = textTypeName;
 		this.docTypeName = docTypeName;
 		this.parsePrefix = parsePrefix;
 		this.useSGMLformat = useSGML;
+		this.justSents = justSents;
 		this.debug = debug;
 		if (debug) {
 			if (useSGMLformat) {
@@ -157,6 +160,7 @@ public class GigawordDocumentHandler {
 		ArrayList<CoreMap> sentences = new ArrayList<CoreMap>();
 		String line = "";
 		boolean inText = false;
+		int docSize = 0;
 
 		// inDocToAnnotate is always true unless a list of docIds is provided.
 		// See setDocList().
@@ -194,16 +198,22 @@ public class GigawordDocumentHandler {
 						inText = false;
 					} 
 				}
+				//			System.out.println(line);
 			} else {
 				inText = true;
 			}
-			System.out.println(line);
 
 			if (inText && line.startsWith(parsePrefix)) {
+				docSize++;
 				CoreMap newSentence = getSentence(line);
 				if (newSentence != null) {
 					sentences.add(newSentence);
 				}
+				if (justSents && docSize % 100 == 0) {
+				    if (debug) System.err.println("annotating "+docSize);
+				    return sentencesToDocument(sentences);
+				}
+
 			}
 		}
 		if (!inDocToAnnotate)
@@ -300,6 +310,9 @@ public class GigawordDocumentHandler {
 		document.set(SentencesAnnotation.class, sentences);
 		List<CoreLabel> docTokens = new ArrayList<CoreLabel>();
 		int sentIndex = 1;
+		if (justSents) {
+		    sentIndex = sentenceCount;
+		}
 		int tokenBegin = 0;
 		for (CoreMap sentAnno : sentences) {
 			if (sentAnno == null) {
@@ -312,6 +325,7 @@ public class GigawordDocumentHandler {
 			sentAnno.set(TokenEndAnnotation.class, tokenEnd);
 			sentAnno.set(SentenceIndexAnnotation.class, sentIndex);
 			sentIndex++;
+			sentenceCount++;
 			tokenBegin = tokenEnd;
 		}
 		document.set(TokensAnnotation.class, docTokens);

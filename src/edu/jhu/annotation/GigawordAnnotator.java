@@ -49,7 +49,8 @@ public class GigawordAnnotator {
 			+ "       --ner t|f                  perform NER (default:t)\n"
 			+ "       --coref t|f                perform coref resolution (default: t)\n"
 			+ "       --dep t|f                  extract dependencies (default: t)\n"
-			+ "       --debug                    to print debugging messages";
+	                + "       --sents t|f                just sentences, no document structure (default f; if true no coref and no SGML input)\n"
+			+ "       --debug                 to print debugging messages";
 
 	String docTypeName = "DOC";
 	String textTypeName = "TEXT";
@@ -59,6 +60,7 @@ public class GigawordAnnotator {
 	boolean do_deps = true;
 	boolean useSGML = true;
 	boolean debug = false;
+    boolean justSents = false;
 	String inputpath = null;
 
 	public GigawordAnnotator() {}
@@ -80,7 +82,7 @@ public class GigawordAnnotator {
 
 	private void initialize() {
 		gdh = new GigawordDocumentHandler(inputpath);
-		gdh.setOptions(useSGML, textTypeName, docTypeName, parsePrefix, debug);
+		gdh.setOptions(useSGML, textTypeName, docTypeName, parsePrefix, debug, justSents);
 		Properties props = new Properties();
 		String annotatorList = "tokenize, ssplit, pos, lemma, parse";
 		if (do_coref)
@@ -124,7 +126,14 @@ public class GigawordAnnotator {
 					}
 				} else if (args[i].equals("--debug")) {
 					debug = true;
-				} else {
+				} else if (args[i].equals("--sents")) {
+					if (args[++i].equalsIgnoreCase("t")) {
+					    justSents = true;
+					    do_coref = false;
+					    useSGML = false;
+					}
+				}
+				else {
 					System.err.println("Invalid option: " + args[i]);
 					System.err.println(usage);
 					System.exit(1);
@@ -166,6 +175,7 @@ public class GigawordAnnotator {
 		gdh.openReader();
 		while (!gdh.fileEmpty()) {
 				Annotation document = gdh.getNextDocumentAnnotation();
+				if (debug) { System.err.println("Annotating document "+gdh.currentDocument); }
 				if (document == null) {
 					if (debug) {
 						System.err.println("Null document");
@@ -321,6 +331,7 @@ public class GigawordAnnotator {
 					.getChildElements("sentence");
 			for (int i = 0; i < sentElems.size(); i++) {
 				Element thisSent = sentElems.get(i);
+				thisSent.addAttribute(new Attribute("id",""+sentences.get(i).get(SentenceIndexAnnotation.class))); 
 				Element basicDepElem = thisSent
 						.getFirstChildElement("basic-dependencies");
 				SemanticGraph semGraph = sentences.get(i).get(SemanticGraphCoreAnnotations.BasicDependenciesAnnotation.class);
@@ -338,9 +349,20 @@ public class GigawordAnnotator {
 		ser.setIndent(2);
 		ser.setMaxLength(0);
 		Elements docElements = docElem.getChildElements();
-		for (int i = 0; i < docElements.size(); i++) {
+		if (justSents) {
+		    Elements sentElems = docElem.getFirstChildElement("sentences")
+			.getChildElements("sentence");
+		    for (int i = 0; i < sentElems.size(); i++) {
+			ser.write(sentElems.get(i));
+			ser.writeRaw("\n");
+		    }
+
+		}
+		else {
+		    for (int i = 0; i < docElements.size(); i++) {
 			ser.write(docElements.get(i));
-			System.out.println("\n");
+			ser.writeRaw("\n");
+		    }
 		}
 		ser.flush();
 		if (useSGML) {
