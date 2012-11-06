@@ -198,7 +198,7 @@ public class GigawordDocumentHandler {
 						inText = false;
 					} 
 				}
-				//			System.out.println(line);
+				System.out.println(line);
 			} else {
 				inText = true;
 			}
