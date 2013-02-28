@@ -4,6 +4,8 @@
 # Courtney Napoles, cdnapoles@gmail.com
 # 2012-07-03
 
+NOTES
+
 See pipeline.sh for the full pipeline and usage of individual steps
 If you are running a copy of this, you need to modify scripts/
 splitta.1.03/sbd.py so that the paths for SVM_LEARN and SVM_CLASSIFY
@@ -14,6 +16,9 @@ parsing) so please set your configurations accordingly
 (qsub -l num_proc=8,mem_free=16G,h_vmem=22G).
 
 Be sure to set the environment encoding to UTF-8.
+
+
+USAGE
 
 To run:
 
@@ -29,6 +34,31 @@ large quantity of files this is unadvisable, because loading the
 Stanford models takes a couple of minutes. It is more efficient to
 include several documents in one file (and documents should be
 formatted like <DOC><TEXT>parses</TEXT></DOC>). 
+
+
+FILE FORMAT
+
+sample.txt contains a sample file format. If using SGML markup
+(which is recommended because then multiple documents can be stored
+in the same file), the following format is assumed:
+
+<DOC id="xx">
+<TEXT>
+...
+</TEXT>
+</DOC>
+<DOC ...
+
+Any tags in between <DOC> and <TEXT> are ignored but passed through
+intact. The only tag allowed in <TEXT> is <P>. All text in the
+<TEXT> element will be processed and annotated. The pipeline assumes
+that each line is EITHER sgml markup or text (so do not put a tag
+on the same line as text. The pipeline does not detect/correct 
+invalid SGML but it will convert SGML to XML (by adding a root 
+element and escaping <, >, and &. 
+
+
+DEPENDENCIES
 
 Software versions used:
 Splitta 1.03
