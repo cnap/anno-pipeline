@@ -300,15 +300,16 @@ public class GigawordAnnotator {
 
 		// rename coreference parent tag to "coreferences"
 		Element corefElem = docElem.getFirstChildElement("coreference");
-		corefElem.setLocalName("coreferences");
-
 		// because StanfordCoreNLP.annotationToDoc() only appends the coref
 		// element if it is nonempty (per Ben's request)
 		if (corefElem == null) {
 			Element corefInfo = new Element("coreferences", null);
 			docElem.appendChild(corefInfo);
 		}
-		
+		else {
+		    corefElem.setLocalName("coreferences");
+		}
+
 		if (do_deps) {
 			if (debug) {
 				System.err.println("Annotating dependencies");

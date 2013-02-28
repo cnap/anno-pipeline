@@ -6,7 +6,7 @@
 
 for file in $@; do
     if [[ $file =~ \.gz$ ]]; then
-	gzcat $file
+	zcat $file
     elif [[ $file =~ \.bz2$ ]]; then
        	bzcat $file
     else

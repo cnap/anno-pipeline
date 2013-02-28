@@ -2,54 +2,58 @@
 
 # This takes two files (presumably they are the same length
 # and for any given line, that line is blank in one file and
-# contains text in the other), escapes ampersands, and 
-# merges them into a new file.
+# contains text in the other), escapes &<>, adds a root node, 
+# and merges them into a new file.
 #
 # perl merge_file.pl sample.parse sample.markup
 #
 # Courtney Napoles, cdnapoles@gmail.com
 # 2012-06-29
 
+use HTML::Entities;
 
 if (@ARGV != 2) {
-    die "perl merge_file.pl fileA fileB\n";
+    die "perl merge_file.pl PARSE_FILE MARKUP_FILE\n";
 }
 
-$fileA = $ARGV[0];
-$fileB = $ARGV[1];
+$parsefile = $ARGV[0];
+$markupfile = $ARGV[1];
 
-if ($fileA =~ /\.gz$/) {
-    open(FILE_A, "gunzip -c $fileA |") or die $!;
+if ($parsefile =~ /\.gz$/) {
+    open(PARSES, "gunzip -c $parsefile |") or die $!;
 } else {
-    open(FILE_A, $fileA) or die $!;
+    open(PARSES, $parsefile) or die $!;
 }
 
-if ($fileB =~ /\.gz$/) {
-    open(FILE_B, "gunzip -c $fileB |") or die $!;
+if ($markupfile =~ /\.gz$/) {
+    open(MARKUP, "gunzip -c $markupfile |") or die $!;
 } else {
-    open(FILE_B, $fileB) or die $!;
+    open(MARKUP, $markupfile) or die $!;
 }
 
-$fileA =~/([^\/]+)\.[a-zA-Z]+$/;
+$parsefile =~/([^\/]+)\.[a-zA-Z]+$/;
 $filename = $1;
 
 # assuming that the input is not proper XML, we need to 
 # add a root
 print "<FILE id=\"$filename\">\n";
-foreach $line_a (<FILE_A>) {
-    $line_b = <FILE_B>;
-    chomp($line_a);
-    chomp($line_b);
-    if ($line_a =~ /^$/) {
-        $line_b =~ s/(&)(?![a-z]+;)/&amp;/g;
-        print $line_b."\n";
+foreach $parse_line (<PARSES>) {
+    $markup_line = <MARKUP>;
+    chomp($parse_line);
+    chomp($markup_line);
+    if ($parse_line =~ /^$/) {
+	# escape & if present and assume no angle brackets 
+	# in the markup (besides the expected ones)
+        $markup_line =~ s/(&)(?![a-z]+;)/&amp;/g;
+        print $markup_line."\n";
     } else {
-        $line_a =~ s/(&)(?![a-z]+;)/&amp;/g;
-        print $line_a."\n";
+	# escape illegal xml characters <>&
+        $parse_line = encode_entities($parse_line,"<>&");
+        print $parse_line."\n";
     }
 }
 
 print "</FILE>\n";
 
-close(FILE_A);
-close(FILE_B);
+close(PARSES);
+close(MARKUP);

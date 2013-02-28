@@ -95,7 +95,7 @@ public class GigawordDocumentHandler {
 		// maintain all header info before the first doc element (default is
 		// "DOC")
 		if (useSGMLformat) {
-		while (!(s = input.readLine()).startsWith("<" + docTypeName)) {
+		    while (!(s = input.readLine()).trim().startsWith("<" + docTypeName)) {
 			i++;
 			System.out.println(s);
 			input.mark(0);

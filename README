@@ -17,15 +17,14 @@ Be sure to set the environment encoding to UTF-8.
 
 To run:
 
-./pipeline file_to_annotate.xml working_directory
-
+./pipeline file_to_annotate.xml working_directory [OPTIONS]
 
 To just run the annotators:
 java -Xmx16g -cp bin:lib/stanford-corenlp-2012-05-22.jar:lib/my-xom.jar:lib/stanford-corenlp-2012-05-22-models.jar:lib/joda-time.jar \
      edu.jhu.annotation.GigawordAnnotator --in <TESTFILE>
 
 If you'd like to annotate a file that contains a single document 
-without any SGML markup, add "-sgml f". However, for annotating a 
+without any SGML markup, add "--sgml f". However, for annotating a 
 large quantity of files this is unadvisable, because loading the 
 Stanford models takes a couple of minutes. It is more efficient to
 include several documents in one file (and documents should be
